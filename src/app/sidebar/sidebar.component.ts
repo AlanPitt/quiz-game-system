@@ -144,18 +144,7 @@ export class SidebarComponent implements OnInit {
                 type: 'link',
                 icontype: 'nc-icon nc-book-bookmark'
             } 
-            // {
-            //     path: '/pages',
-            //     title: 'Pages',
-            //     type: 'sub',
-            //     icontype: 'nc-icon nc-book-bookmark',
-            //     children: [
-            //         { path: 'user', title: 'User Page', ab: 'UP' },
-            //         // { path: 'login', title: 'Login Page', ab: 'LP' },
-            //         // { path: 'register', title: 'Register Page', ab: 'RP' },
-            //         { path: 'lock', title: 'Lock Screen Page', ab: 'LSP' }
-            //     ]
-            // }
+            
             ];
         } else if (role == "manager") {
             this.ROUTES = [{
