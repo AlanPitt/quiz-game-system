@@ -57,7 +57,8 @@
               <img src="./assets/img/faces/joe-gardner-2.jpg" alt="...">
             </div>
             <div class="card-body ">
-              <h4 class="card-title">Joe Gardner</h4>
+              <h4 class="card-title" *ngIf="role != 'tourist'">Joe Gardner</h4>
+              <h4 class="card-title" *ngIf="role == 'tourist'">Visitor</h4>
               <div class="form-group">
                 <input type="password" class="form-control" placeholder="Enter Password..">
               </div>

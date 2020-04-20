@@ -15,6 +15,7 @@ export class LockComponent implements OnInit{
     private toggleButton;
     private sidebarVisible: boolean;
     private nativeElement: Node;
+    role = sessionStorage.getItem("role");
 
     constructor(private element : ElementRef) {
         this.nativeElement = element.nativeElement;

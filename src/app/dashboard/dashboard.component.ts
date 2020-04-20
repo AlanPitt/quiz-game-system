@@ -29,11 +29,14 @@ export class DashboardComponent implements OnInit {
       footerRow: ['ID', 'Topic', 'Question Type', 'Build Date', 'Difficulty', 'Actions'],
       dataRows: []
     };
+    this.dataTable.dataRows.push(
+      ["1", "Pharmacy", 'Multiple Choice', "2020", "Medium", '']
+    )
 
     let titles = ["Pharmacy", "Biology", "Dental", "Information Science"];
     let dates = ["2019", "2020", "2018", "2017", "2016"];
     let diffs = ["Hard", "Medium", "Easy"];
-    for (let i = 1; i <= 30; ++i) {
+    for (let i = 2; i <= 30; ++i) {
       let title = titles[this.getRandomArbitrary(0, titles.length)];
       let date = dates[this.getRandomArbitrary(0, dates.length)];
       let diff = diffs[this.getRandomArbitrary(0, diffs.length)];

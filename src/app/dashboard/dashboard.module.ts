@@ -8,6 +8,7 @@ import {
 import { DashboardComponent } from './dashboard.component';
 
 import { DashboardRoutes } from './dashboard.routing';
+import { RateComponent } from './rate';
 
 @NgModule({
     imports: [
@@ -18,7 +19,7 @@ import { DashboardRoutes } from './dashboard.routing';
           apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
         })
     ],
-    declarations: [DashboardComponent],
+    declarations: [DashboardComponent, RateComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
